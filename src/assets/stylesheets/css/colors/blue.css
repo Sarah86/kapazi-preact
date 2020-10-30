@@ -1,0 +1,631 @@
+/*==========================================*/
+/* CSS Document */
+/*
+  Template Name: Sail 
+  Description: Sail - Modern Multipurpose HTML Template
+  Author: Suave Digital
+  Website: http://suavedigital.com
+*/
+/*==========================================*/
+/*
+  This file contains color scheming settings
+*/
+/*==========================================*/
+/* Added From Components.css */
+/*==========================================*/
+/*==========================================*/
+/* CSS Document */
+/*
+  Template Name: Sail 
+  Description: Sail - Modern Multipurpose HTML Template
+  Author: Suave Digital
+  Website: http://suavedigital.com
+*/
+/*==========================================*/
+/*
+  This file contains sass mixins
+*/
+/*==========================================*/
+/* Breakpoints */
+/* Main Componemt */
+::selection {
+  background: #00AA97;
+}
+
+a {
+  color: #00AA97;
+}
+a:after {
+  background: #00AA97;
+}
+a:hover {
+  color: #00AA97;
+}
+
+/* Default Form Style */
+.def-input:focus {
+  border-bottom: 1px solid #00AA97;
+}
+
+/* Default Button Style */
+.def-btn.btn-solid {
+  background: #00AA97;
+  border: 1px solid #00AA97;
+}
+.def-btn.btn-solid:hover {
+  background: #00AA97;
+  border: 1px solid #00AA97;
+}
+.def-btn.btn-outline {
+  border: 2px solid #00AA97;
+  color: #00AA97;
+}
+.def-btn.btn-outline:hover {
+  background: #00AA97;
+}
+
+/* Default Accordion Style */
+.def-accordion .panel-heading a .accordion-shape {
+  background: url("../../../images/accordion-minus.png") #00AA97 center no-repeat;
+}
+.def-accordion .panel-heading a .accordion-shape:after {
+  border-top: 50px solid #00AA97;
+}
+.def-accordion .panel-heading a.collapsed .accordion-shape {
+  background: url("../../../images/accordion-plus.png") #00AA97 center no-repeat;
+}
+.def-accordion .panel-heading a:hover .title-text {
+  border: 1px solid #00AA97;
+  color: #00AA97;
+}
+.def-accordion .panel-body ul li a:hover {
+  color: #00AA97;
+  border-bottom: 1px solid #00AA97;
+}
+
+.navbar .navbar-nav .open a, .navbar .navbar-nav .open a:hover, .navbar .navbar-nav .open a:focus {
+  color: #00AA97;
+}
+.navbar .navbar-nav li a:hover, .navbar .navbar-nav li a:focus {
+  color: #00AA97;
+}
+.navbar .navbar-nav li.active a {
+  color: #00AA97;
+  position: relative;
+}
+.navbar .navbar-nav li.active a:before {
+  border-right: 5px solid #00AA97;
+}
+.navbar .navbar-nav li.active a:hover {
+  color: #00AA97;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu .dropdown-list strong {
+  color: #00AA97;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu .dropdown-list.titled li h3.shop-title {
+  color: #00AA97;
+}
+.navbar .navbar-nav .dropdown .dropdown-menu .dropdown-list.titled li .media .media-body .price {
+  color: #00AA97;
+}
+
+/* Banner Style */
+.banner.carousel .left .control .shape:hover i, .banner.carousel .right .control .shape:hover i {
+  color: #00AA97;
+}
+.banner.carousel .carousel-inner .item .overlay {
+  background: #00AA97;
+}
+.banner.carousel .carousel-inner .item .content .text-content .button-wrap .btn-outline:hover {
+  color: #00AA97;
+}
+
+/* Underlined heading Style */
+.underlined-heading:after {
+  background: #00AA97;
+}
+
+.center-underlined-heading:after {
+  background: #00AA97;
+}
+
+/* Iconic Title Style */
+.iconic-title .title-icon span {
+  background: #00AA97;
+}
+.iconic-title h2 {
+  color: #00AA97;
+}
+
+.iconic-title-alt .title-icon {
+  background: #00AA97;
+}
+
+/* Title With Background Style */
+.title-w-bg {
+  background: #00AA97;
+}
+
+/* Timeline Container Style */
+.timeline > li .timeline-icon {
+  background: #00AA97;
+}
+
+/* Triple column style */
+.triple-column .column .button a:hover {
+  background: #00AA97;
+  border: 2px solid #00AA97;
+}
+.triple-column .center {
+  background: #00AA97;
+}
+.triple-column .center .button a:hover {
+  color: #00AA97;
+}
+.triple-column .center:before {
+  border-bottom: 300px solid #00AA97;
+}
+.triple-column .center:after {
+  border-top: 300px solid #00AA97;
+}
+
+/* Portfolio item style */
+.portfolio-item .portfolio-figure figcaption .caption-wrap .portfolio-btn:hover {
+  color: #00AA97;
+}
+.portfolio-item .portfolio-figure:hover figcaption {
+  background: rgba(0, 170, 151, 0.9);
+}
+
+/* Banner Small Style */
+.banner-small .content-wrap .title:before {
+  background: #00AA97;
+}
+
+/* Banner Typed Style */
+.banner-typed .banner-content .buttons .def-btn:hover {
+  border-color: #00AA97;
+}
+
+/* Project Counter Style */
+.project-counter .counter-wrap .counter-column .separator {
+  background: #00AA97;
+}
+.project-counter .counter-wrap .counter-column .counter-number {
+  color: #00AA97;
+}
+
+/* Skill Content Style */
+.skill-content .skillbar-wrap .icon i {
+  color: #00AA97;
+}
+.skill-content .skillbar-wrap .bar-and-text .bar .filled {
+  background: #00AA97;
+}
+.skill-content .skillbar-wrap .bar-and-text .bar .filled:after {
+  border-top: 5px solid #00AA97;
+}
+
+/* Tweet Content Style */
+.tweet i {
+  color: #00AA97;
+}
+.tweet i:after {
+  background: #00AA97;
+}
+.tweet .carousel .carousel-indicators li {
+  border-color: #00AA97;
+}
+.tweet .carousel .carousel-indicators li.active {
+  background: #00AA97;
+}
+
+/* Testimonial Style */
+.testimonial .testimonial-slider .testimonial-content .image-name-wrap .name:after {
+  background: #00AA97;
+}
+.testimonial .slick-dots li.slick-active button:before {
+  background: #00AA97;
+}
+
+/* Testimonial Alt Style */
+.testimonial-alt .image-slider .carousel-container .carousel .carousel-indicators li {
+  border: 1px solid #00AA97;
+}
+.testimonial-alt .image-slider .carousel-container .carousel .carousel-indicators li.active {
+  background: #00AA97;
+}
+
+/* Blog Post Style */
+.blog-post .image-content .date, .blog-post-alt .image-content .date {
+  background: #00AA97;
+}
+.blog-post .image-content .date:after, .blog-post-alt .image-content .date:after {
+  border-top: 60px solid #00AA97;
+}
+.blog-post .image-content .info .link:hover, .blog-post-alt .image-content .info .link:hover {
+  color: #00AA97;
+}
+.blog-post .text-content .title h3:hover, .blog-post-alt .text-content .title h3:hover {
+  color: #00AA97;
+}
+.blog-post .text-content .cat-name .link:hover, .blog-post-alt .text-content .cat-name .link:hover {
+  color: #00AA97;
+}
+.blog-post .text-content .info .link:hover, .blog-post-alt .text-content .info .link:hover {
+  color: #00AA97;
+}
+
+.blog-post-alt-two .text-content .post-date, .blog-post-alt-four .text-content .post-date {
+  background: #00AA97;
+}
+.blog-post-alt-two .text-content .post-date:before, .blog-post-alt-four .text-content .post-date:before {
+  border-top: 50px solid #00AA97;
+}
+.blog-post-alt-two .text-content .info i, .blog-post-alt-four .text-content .info i {
+  color: #00AA97;
+}
+.blog-post-alt-two.reverse .text-content .post-date, .blog-post-alt-four.reverse .text-content .post-date {
+  background: #00AA97;
+}
+.blog-post-alt-two.reverse .text-content .post-date:after, .blog-post-alt-four.reverse .text-content .post-date:after {
+  border-top: 50px solid #00AA97;
+}
+
+.blog-post-alt-three.post-with-quote .quote {
+  background: #00AA97;
+}
+.blog-post-alt-three.post-with-media .media .post-date {
+  background: #00AA97;
+}
+.blog-post-alt-three .top-content .post-date {
+  background: #00AA97;
+}
+.blog-post-alt-three .top-content .title-info .title h3:hover {
+  color: #00AA97;
+}
+.blog-post-alt-three .top-content .title-info .info i:hover, .blog-post-alt-three .top-content .title-info .info a:hover {
+  color: #00AA97;
+}
+
+.blog-post-alt-four .text-content .post-date {
+  background: #00AA97;
+}
+.blog-post-alt-four .text-content .post-date:before {
+  border-top: 50px solid #00AA97;
+}
+
+.blog-post-preview .top-content .icon-text-wrap .icon-text i {
+  color: #00AA97;
+}
+.blog-post-preview .image-content .image-title {
+  background: #00AA97;
+}
+.blog-post-preview .image-content .image-title:before {
+  border-top: 50px solid #00AA97;
+}
+.blog-post-preview .icon-list-wrap .icon-list .icon i {
+  color: #00AA97;
+}
+
+.blog-sidebar .content-row .blog-sidebar-tags .tag:hover {
+  border-color: #00AA97;
+}
+.blog-sidebar .content-row .blog-sidebar-list .media-body .media-heading a:hover {
+  color: #00AA97;
+}
+.blog-sidebar .content-row .blog-sidebar-list li a:hover {
+  color: #00AA97;
+}
+
+.comment-list .media .media-body:hover .media-heading .reply {
+  background: #00AA97;
+}
+
+/* Pagination Style */
+.pagination-wrap .pagination li a.active, .pagination-wrap .pagination li a:hover {
+  color: #fff;
+  background: #00AA97;
+  border-color: #00AA97;
+}
+
+/* Process Style */
+.process .process-column-wrapper .center-shape .content-inner {
+  border: 1px solid #00AA97;
+}
+
+/* Pricing Table Style */
+.pricing-table .pricing .button-wrap .def-btn:hover {
+  background: #00AA97;
+  border: 2px solid #00AA97;
+}
+.pricing-table .pricing.choosed .head {
+  background: #00AA97;
+}
+.pricing-table .pricing.choosed .head:after {
+  background: #00AA97;
+}
+.pricing-table .pricing.choosed .button-wrap .def-btn {
+  color: #00AA97;
+  border: 2px solid #00AA97;
+}
+.pricing-table .pricing.choosed .button-wrap .def-btn:hover {
+  background: #00AA97;
+}
+
+/* Pricing Table Alt Style */
+.pricing-table-alt .pricing .head .top-shape {
+  background: #00AA97;
+}
+.pricing-table-alt .pricing .button-wrap .def-btn:hover {
+  background: #00AA97;
+  border: 2px solid #00AA97;
+}
+.pricing-table-alt .pricing.choosed .head {
+  background: #00AA97;
+}
+.pricing-table-alt .pricing.choosed .head .bottom-text:after {
+  border-top: 20px solid #00AA97;
+}
+.pricing-table-alt .pricing.choosed .head:after {
+  background: #00AA97;
+}
+.pricing-table-alt .pricing.choosed .button-wrap .def-btn {
+  color: #00AA97;
+  border: 2px solid #00AA97;
+}
+.pricing-table-alt .pricing.choosed .button-wrap .def-btn:hover {
+  background: #00AA97;
+}
+
+/* Iconic Column Style Style */
+.iconic-column .icon i {
+  font-size: 40px;
+  color: #00AA97;
+}
+.iconic-column .icon:after {
+  background: #00AA97;
+}
+
+/* Iconic Column Alt Style Style */
+.iconic-column-alt .icon i {
+  color: #00AA97;
+}
+
+/* Who We Are Style */
+.who-we-are .image-content .image-title {
+  background: #00AA97;
+}
+.who-we-are .image-content .image-title:before {
+  border-top: 50px solid #00AA97;
+}
+.who-we-are .icon-list-wrap .icon-list .icon i {
+  color: #00AA97;
+}
+
+/* Team Slider Style */
+.team-slider-wrap .team-slider-nav .slick-slide.team-photo .overlay {
+  background: rgba(0, 170, 151, 0.8);
+}
+.team-slider-wrap .team-slider .slider-content .text-section .title h3 {
+  color: #00AA97;
+}
+.team-slider-wrap .team-slider .slider-content .text-section .socmed a:hover {
+  background: #00AA97;
+}
+
+/* Team Carousel Style */
+.team-carousel .team .top-content-wrap .overlay {
+  background: #00AA97;
+}
+.team-carousel .team .top-content-wrap .top-content .name h3 {
+  color: #00AA97;
+}
+.team-carousel .slick-dots {
+  bottom: -60px;
+}
+.team-carousel .slick-dots li button {
+  background: #00AA97;
+}
+
+/* Feature Panel Style */
+.feature-panel-wrap .feature-panel .panel-heading li.active a {
+  background: #00AA97;
+}
+.feature-panel-wrap .feature-panel .panel-heading li.active a:before {
+  border-right: 10px solid #00AA97;
+}
+
+/* Shop Column Style */
+.shop-column .image .overlay .button-wrap a.btn-solid:after {
+  border-top: 40px solid #00AA97;
+}
+.shop-column .image .overlay .button-wrap a.btn-solid:hover:after {
+  border-top: 40px solid #00AA97;
+}
+.shop-column .bottom-text .price {
+  background: #00AA97;
+}
+.shop-column .bottom-text .price:after {
+  border-top: 50px solid #00AA97;
+}
+
+/* Shop Sidebar */
+.shop-sidebar .content-row .size-tag:hover {
+  border-color: #00AA97;
+}
+.shop-sidebar .content-row .shop-sidebar-tags .tag:hover {
+  border-color: #00AA97;
+}
+.shop-sidebar .content-row .shop-sidebar-list .media-body .media-heading a:hover {
+  color: #00AA97;
+}
+.shop-sidebar .content-row .shop-sidebar-list li a:hover {
+  color: #00AA97;
+}
+
+/* Process Style */
+.process .process-column .line {
+  background: #00AA97;
+}
+.process .process-column .line:before {
+  background: #00AA97;
+}
+.process .process-column .line:after {
+  background: #00AA97;
+}
+.process .process-column .process-icon {
+  border: 2px solid #00AA97;
+}
+.process .process-column .process-icon i {
+  color: #00AA97;
+}
+.process .process-column .process-icon:hover {
+  background: #00AA97;
+}
+
+/* Default Panel Style */
+.def-panel .panel-heading .nav a:hover h3, .def-panel .panel-heading .nav a:focus h3 {
+  color: #00AA97;
+}
+
+/* Gallery Column Style */
+.gallery-column figcaption .caption-wrap i {
+  color: #00AA97;
+}
+.gallery-column:hover figcaption {
+  background: rgba(0, 170, 151, 0.9);
+}
+
+/* Gallery Carousel Style */
+.gallery-carousel-wrap .gallery-carousel .slick-track {
+  padding-bottom: 20px;
+}
+.gallery-carousel-wrap .gallery-carousel .slick-arrow.slick-prev:before {
+  color: #00AA97;
+}
+.gallery-carousel-wrap .gallery-carousel .slick-arrow.slick-prev:after {
+  color: #00AA97;
+}
+.gallery-carousel-wrap .gallery-carousel .slick-arrow.slick-next:before {
+  color: #00AA97;
+}
+.gallery-carousel-wrap .gallery-carousel .slick-arrow.slick-next:after {
+  color: #00AA97;
+}
+
+/* Demo List Style */
+.demo-list .subtitle h3 {
+  color: #00AA97;
+}
+.demo-list .features-list .number-title .number-shape {
+  background: #00AA97;
+}
+.demo-list .features-list .number-title .number-shape:after {
+  border-top: 55px solid #00AA97;
+}
+
+/* Demo List Alt Style */
+.demo-list-alt .check-icon i {
+  color: #00AA97;
+}
+
+/* Call To Action Style */
+.cta-form .overlay {
+  background: rgba(0, 170, 151, 0.9);
+}
+
+/* Default Footer Style */
+footer .column-container .contact-us .footer-column {
+  background: #00AA97;
+}
+footer .column-container .contact-us .footer-column:before {
+  background: #00AA97;
+}
+footer .copyright .left-section {
+  background: #00AA97;
+}
+footer .copyright .left-section:after {
+  border-top: 65px solid #00AA97;
+}
+
+@media (min-width: 1200px) {
+  .navbar .navbar-nav .dropdown .dropdown-menu {
+    text-align: center;
+  }
+  .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-list-wrap {
+    width: 1170px;
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+  }
+  .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-list-wrap .dropdown-list {
+    text-align: left;
+  }
+
+  .banner.carousel {
+    max-height: 800px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .navbar-nav .dropdown .dropdown-menu .dropdown-list-wrap {
+    width: 970px;
+  }
+}
+@media (max-width: 991px) {
+  footer .column-container .contact-us .footer-column .title h4:after {
+    background: #00AA97;
+  }
+}
+@media (max-width: 767px) {
+  /* Responsive Component Style */
+  .navbar .navbar-toggle:hover .icon-bar, .navbar .navbar-toggle:focus .icon-bar {
+    background: #00AA97;
+  }
+  .navbar .navbar-nav li:hover .dropdown-toggle {
+    background: #00AA97;
+  }
+
+  .comment-list .media .media-body .media-heading .reply {
+    background: #00AA97;
+  }
+}
+/*==========================================*/
+/* Added From style.css */
+/*==========================================*/
+/*---blog single custom components---*/
+.about-the-author .image .shape {
+  background: #00AA97;
+}
+.about-the-author .image .shape:after {
+  background: #00AA97;
+}
+
+/* Shop Single Custom Components */
+.shop-single-content .right-section .size-tag:hover {
+  border-color: #00AA97;
+}
+
+/*---Portfolio single custom components---*/
+.portfolio-single .related-project .overlay {
+  background: rgba(0, 170, 151, 0.5);
+}
+
+/*---Error 404 custom components---*/
+.error-404 .left-section .text-wrapper .error-message-title {
+  color: #00AA97;
+}
+.error-404 .right-decoration .overlay {
+  background: #00AA97;
+}
+
+/*---Coming soon custom components---*/
+.coming-soon .coming-soon-title h1.colored {
+  color: #00AA97;
+}
+.coming-soon .right-decoration .overlay {
+  background: #00AA97;
+}
+.coming-soon .countdown li {
+  border-right: 1px solid #00AA97;
+}
