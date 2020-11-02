@@ -126,7 +126,7 @@ $(window).load(function() {
       }
     }]
 	});*/
-
+/*
   $('.team-carousel').slick({
     infinite: true,
     slidesToShow: 3,
@@ -158,7 +158,7 @@ $(window).load(function() {
         }
       }
     ]
-  });
+  });*/
 
   $('.client-logos').slick({
     infinite: true,
@@ -188,7 +188,7 @@ $(window).load(function() {
     }]
   });
 
-  $('.gallery-carousel').slick({
+  /*$('.gallery-carousel').slick({
     centerMode: true,
     slidesToShow: 3,
     focusOnSelect: true,
@@ -212,7 +212,7 @@ $(window).load(function() {
         }
       }
     ]
-  });
+  });*/
 
 
   // -------------- Wow -------------- 
