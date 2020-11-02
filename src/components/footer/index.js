@@ -7,7 +7,7 @@ const Footer = () => (
 		<div class="column-container">
 		  <div class="container">
   
-			<div class="col-md-3 col-sm-3">
+			<div class="col-md-4 col-sm-4">
 			  <div class="footer-column margin-responsive">
 				<div class="title">
 				  <h4 class="underlined-heading">Sobre nós</h4>
@@ -18,22 +18,12 @@ const Footer = () => (
 			  </div> 
 			</div>
   
-			<div class="col-md-3 col-sm-3">
+			<div class="col-md-4 col-sm-4">
 			  <div class="footer-column margin-responsive">
 				<div class="title">
-				  <h4 class="underlined-heading">Contact Us</h4>
+				  <h4 class="underlined-heading">Contato</h4>
 				</div>
 				<div class="content">
-				  <div class="media">
-					<div class="media-left">
-					  <a href="#">
-						<i class="pe-7s-map-marker pe-2x"></i>
-					  </a>
-					</div>
-					<div class="media-body">
-					  <p>Suave Digital, Rancabentang Street 150, Cimahi</p>
-					</div>
-				  </div>
 				  <div class="media">
 					<div class="media-left">
 					  <a href="#">
@@ -41,8 +31,8 @@ const Footer = () => (
 					  </a>
 					</div>
 					<div class="media-body">
-					  <p>(022) 123 456 789</p>
-					  <p>(021) 789 456 123</p>
+					  <p>(24) 99864-8221 - 𝗥𝗝</p>
+					  <p>(11) 94177-9925 - 𝗦𝗣</p>
 					</div>
 				  </div>
 				  <div class="media">
@@ -52,8 +42,7 @@ const Footer = () => (
 					  </a>
 					</div>
 					<div class="media-body">
-					  <p><a href="http://demo.suavedigital.com/cdn-cgi/l/email-protection" >[email&#160;protected]</a></p>
-					  <p><a href="http://demo.suavedigital.com/cdn-cgi/l/email-protection" >[email&#160;protected]</a></p>
+					  <p><a href="mailto:𝗸𝗮𝗽𝗮𝘇𝗶𝗽𝗼𝗿𝗮𝗶@𝗴𝗺𝗮𝗶𝗹.𝗰𝗼𝗺" >𝗸𝗮𝗽𝗮𝘇𝗶𝗽𝗼𝗿𝗮𝗶@𝗴𝗺𝗮𝗶𝗹.𝗰𝗼𝗺</a></p>
 					</div>
 				  </div>
 				</div>
@@ -61,20 +50,20 @@ const Footer = () => (
 			</div>
 
   
-			<div class="col-md-3 col-sm-3 contact-us">
+			<div class="col-md-4 col-sm-4 contact-us">
 			  <div class="footer-column margin-responsive">
 				<div class="title">
-				  <h4 class="underlined-heading">Subscribe</h4>
+				  <h4 class="underlined-heading">Inscreva-se</h4>
 				</div>
 				<div class="content">
-				  <p>Marsh mallow muffin soufflé jelly-o tart cake Marsh mallow macaroon jelly jubes dont dragee ice cream dessert </p>
+				  <p>Inscreva-se pare receber novidades</p>
   
 				  <form class="form-inline">
 					<div class="form-group">
 					  <div class="input-group">
-						<input type="text" class="form-control def-input" placeholder="Your Email"/>
+						<input type="text" class="form-control def-input" placeholder="Seu e-mail"/>
 						<div class="input-group-btn">
-						  <button type="button" class="def-btn btn-solid">Send</button>
+						  <button type="button" class="def-btn btn-solid">Enviar</button>
 						</div>
 					  </div>
 					</div>
@@ -90,7 +79,7 @@ const Footer = () => (
 		  <div class="left-section col-md-6 col-sm-6"></div>
 		  <div class="container content-wrap">
 			<div class="content">
-			  <div class="col-md-6 col-sm-6 col-xs-6 left-content">&copy; All Right Reserved Suave Digital</div>
+			  <div class="col-md-6 col-sm-6 col-xs-6 left-content">&copy; Todos os direitos reservados a Kapazi Náutica Por Aí</div>
 			  <div class="col-md-6 col-sm-6 col-xs-6  right-content text-right">
 				<div class="social-media">
 				  <a href="#"><i class="fa fa-facebook"></i></a>
@@ -102,6 +91,9 @@ const Footer = () => (
 			  </div>
 			</div> 
 		  </div> 
+		</div>
+		<div class="copyright col-md-12 no-h-padding">
+		  <p class={style.development}> Desenvolvido com ❤️ por <a href="https://sarahgoncalves.netlify.app/">Sarah Gonçalves</a> </p>
 		</div>
 	  </footer>    
 );

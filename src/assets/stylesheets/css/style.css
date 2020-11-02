@@ -13,13 +13,42 @@
 */
 /*==========================================*/
 
-/*Menu*/
+body.navbar-fixed {
+  margin-top: 65px;
+}
+
+.navbar .navbar-brand{
+  padding: .5em;
+}
+
+.nopadding{
+  padding: 0;
+}
+
+.anchor{
+  display: block;
+  padding-top: 75px;
+}
 
 /*Banner*/
 .banner.carousel .carousel-inner .item .content .image-content {
   max-width: 400px;
 }
 
+.carousel-control{
+  top: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .anchor{
+    padding-top: 125px;
+  }
+
+ }
+
+ @media (max-width: 767px)
+
+}
 /*==========================================*/
 /* CSS Document */
 /*

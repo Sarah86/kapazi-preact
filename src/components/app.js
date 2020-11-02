@@ -11,6 +11,7 @@ import Thermodeck from '../routes/thermodeck';
 import Softtech from '../routes/softtech';
 import Vinilkap from '../routes/vinilkap';
 import Nauticotrancado from '../routes/nauticotrancado';
+import Nauticlean from '../routes/nauticlean';
 
 const App = () => (
 	<div id="app">
@@ -21,6 +22,7 @@ const App = () => (
 			<Softtech path="/softtech/" />
 			<Vinilkap path="/vinilkap/" />
 			<Nauticotrancado path="/nauticotrancado/"/>
+			<Nauticlean path="/nauticlean/"/>
 		</Router>
 		<Footer/>
 	</div>

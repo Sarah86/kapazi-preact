@@ -1,3 +1,5 @@
+import style from "./style.css"
+
 const WhoItem = (props) => (
   <div class="icon-list col-md-6 col-sm-6">
       <div class="icon text-center"><i class={props.icon}></i></div>
@@ -10,11 +12,12 @@ const WhoItem = (props) => (
 
 const Who = () => (
     <section class="who-we-are">
-      <div class="image-bg" style="background: url('assets/images/karol-ayres-2.jpeg') top no-repeat; background-size: cover;"></div>
+      <div class="image-bg" style="background: url('assets/images/karol-ayres-2.jpeg') top no-repeat; background-size: cover;">
+      <div class={style.imageTitle}>A Kapazi Náutica Por Aí</div>
+      </div>
       <div class="container">
         <div class="valign-wrap">
           <div class="col-md-6 col-sm-6 valign-middle image-content no-h-padding">
-            <div class="image-title">A Kapazi Náutica Por Aí</div>
           </div>
           <div class="col-md-6 col-sm-6 valign-middle text-content">
             <div class="title">
@@ -54,7 +57,6 @@ const Who = () => (
         </div>
       </div>
     </section>
-
 )
 
 export default Who;

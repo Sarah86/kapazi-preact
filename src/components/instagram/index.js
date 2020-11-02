@@ -9,7 +9,7 @@ const Instagram = () => {
           'username': 'kapazinauticaporai',
           'container': document.getElementById("instagram-feed1"),
           'display_profile': true,
-          'display_biography': false,
+          'display_biography': true,
           'display_gallery': true,
           'callback': null,
           'styling': true,
@@ -23,15 +23,17 @@ const Instagram = () => {
   }, [])
 
   return(
-    <section class="gallery-carousel-wrap sec-pad">
-    <div class="container">
-      <div class="title">
-        <h3 class="underlined-heading wow animated fadeInUp">Nossas últimas fotos</h3>
-        <p>Siga-nos no Instagram</p>
+    <section class="sec-pad">
+    <div  class={style.instagramposts}>
+      <div class="container">
+        <div class="title">
+          <h3 class="underlined-heading wow animated fadeInUp">Nossas últimas fotos</h3>
+          <p>Siga-nos no Instagram</p>
+        </div>
+
+        <div id="instagram-feed1" class={style.instagramfeed}></div>
+
       </div>
-
-      <div id="instagram-feed1" class={style.instagramfeed}></div>
-
     </div>
   </section>
   )

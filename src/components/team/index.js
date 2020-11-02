@@ -1,9 +1,48 @@
 import {useEffect} from 'react'
 
+const teampeople = [
+    {
+        name: "Piso Thermo Deck",
+        pic: "assets/images/thermodeck-thumb-team-detail-2.png",
+        largepic: "assets/images/thermo-deck_31.jpg",
+        position: "Uma Verdadeira Evolução Em Revestimentos Náuticos",
+        description: "O piso <b>THERMO DECK</b> é um produto 100% PVC que chegou ao mercado náutico unindo decoração, proteção e diversas possibilidades de personalização. Sendo um piso náutico com aparência e característica de madeira Teka, é conhecido como TEKA SINTÉTICA, ela possui friso com perfeito acabamento o que permite diversificação nos layouts do revestimento da embarcação. Um produto que se diferencia do mercado pela sua sofisticação, elegância, características térmicas, acabamento e proteção. Com a vantagem de ser sob medida, o piso acompanha a fita autocolante (dupla face) de alta performance e com garantia de 2 anos seguindo as instruções de uso. Além de ser antiderrapante, uma de sua principal vantagem é a durabilidade, o qual permite anos de vida útil e um simples processo de lixamento realça seu aspecto de novo, além de contar com exclusivo tratamento bactericida Kher.",
+        link: "/thermodeck"
+    },  
+    {
+        name: "Piso EVA Soft Tech",
+        pic: "assets/images/softdeck-thumb-team-detail.png",
+        largepic: "assets/images/soft-tech_15.jpg",
+        position: "Produto leve e macio com qualidade e acabamento Kapazi",
+        description: "O piso de EVA SOFT TECH é um produto leve e macio com qualidade e acabamento Kapazi, o qual proporciona maior conforto ao caminhar sob o mesmo, e design diferenciado que permite diversas possibilidades de personalização. Tem características de isolamento acústico e resistência a impactos. Se diferencia no mercado pelo design, acabamento e curvas",
+        link: "/softtech"
+    },
+    {
+        name: "Carpete Náutico Trançado",
+        pic: "assets/images/trancado-thumb-team-detail.png",
+        largepic: "assets/images/trancado-thumb-team.png",
+        position: "Snorkling Guide",
+        description: "descricao longa"
+    },
+    {
+        name: "Tapete Vinílico Vinil Kap",
+        pic: "assets/images/vinilkap-thumb-detail.png",
+        largepic: "assets/images/vinilkap_4.jpg",
+        position: "Snorkling Guide",
+        description: "descricao longa"
+    },
+    {
+        name: "Carpete Náutico Nauti Clean",
+        pic: "assets/images/nauticlean-thumb-team-detail.png",
+        largepic: "assets/images/team5-large.jpg",
+        position: "Snorkling Guide",
+        description: "descricao longa"
+    }
+]
+
 const Team = () => {
 
 useEffect(() => {
-    
 
    $('.team-slider').slick({
     slidesToShow: 1,
@@ -77,170 +116,50 @@ $('.team-carousel').slick({
 
 return(
         <section class="team-slider-wrap sec-pad">
-        <div class="container">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="text-content col-md-9 col-sm-9 col-xs-12 sec-h-pad-b no-h-padding">
-              <h3 class="underlined-heading wow animated fadeInUp">We Are Great Team</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra vulputate tincidunt. Fusce ultricies dui pretium purus vestibulum suscipit. Proin ut turpis a mauris porttitor luctus eu quis velit. Nunc libero dolor, commodo sit amet nunc nec, sollicitudin semper ligula.</p>
+         <div class="container">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="slider team-slider-nav">
+                {
+                    teampeople.map((people) => (
+                    <div class="team-photo">
+                    <img src={people.pic}  alt={people.name}/>
+                    <div class="overlay">
+                        <div class="valign-wrap content">
+                        <div class="valign-middle">
+                            <div class="name"><h3>{people.name}</h3></div>
+                            <div class="position">{people.position}</div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                ))
+                }
+                </div>   
+                <div class="slider team-slider">
+                {
+                    teampeople.map((people) => (
+                    <div class="slider-content">
+                        <div class="col-md-6 no-h-padding photo-section">
+                        <img src={people.largepic}  alt={people.name}/>
+                        </div>
+                        <div class="col-md-6 text-section no-h-padding">
+                        <div class="title"><h3>{people.name}</h3></div>
+                        <div class="subtitle"><h4>{people.position}</h4></div>
+                        <div class="description">
+                            <p dangerouslySetInnerHTML={{__html:`${people.description}`}}/>
+                        </div>
+                        <a href={people.link} class="def-btn btn-outline portfolio-btn" style={{margin: '2em 0'}}>
+                            <span class="text-content">
+                            Mais Detalhes <i class="pe-7s-angle-right-circle"></i></span>
+                        </a>
+                        </div>
+                    </div> 
+                    
+                ))
+                }
+                </div>
             </div>
-          </div>
-          
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="slider team-slider-nav">
-              <div class="team-photo">
-                <img src="assets/images/team1.jpg"  alt=""/>
-                <div class="overlay">
-                  <div class="valign-wrap content">
-                    <div class="valign-middle">
-                      <div class="name"><h3>Jonathan Doe</h3></div>
-                      <div class="position">CEO, Owner</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="team-photo">
-                <img src="assets/images/team2.jpg"  alt=""/>
-                <div class="overlay">
-                  <div class="valign-wrap content">
-                    <div class="valign-middle">
-                      <div class="name"><h3>Kim Jose</h3></div>
-                      <div class="position">Diving Guide</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="team-photo">
-                <img src="assets/images/team3.jpg"  alt=""/>
-                <div class="overlay">
-                  <div class="valign-wrap content">
-                    <div class="valign-middle">
-                      <div class="name"><h3>Steve Webb</h3></div>
-                      <div class="position">Travel Guide</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="team-photo">
-                <img src="assets/images/team4.jpg"  alt=""/>
-                <div class="overlay">
-                  <div class="valign-wrap content">
-                    <div class="valign-middle">
-                      <div class="name"><h3>Stephen Gerald</h3></div>
-                      <div class="position">Snorkling Guide</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="team-photo">
-                <img src="assets/images/team5.jpg"  alt=""/>
-                <div class="overlay">
-                  <div class="valign-wrap content">
-                    <div class="valign-middle">
-                      <div class="name"><h3>Jessica Jean</h3></div>
-                      <div class="position">Finance</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="slider team-slider">
-              <div class="slider-content">
-                <div class="col-md-6 no-h-padding photo-section">
-                  <img src="assets/images/team1-large.jpg"  alt=""/>
-                </div>
-                <div class="col-md-6 text-section no-h-padding">
-                  <div class="title"><h3>Jonathan Doe</h3></div>
-                  <div class="subtitle"><h4>CEO, Owner</h4></div>
-                  <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra vulputate tincidunt. Fusce ultricies dui pretium purus vestibulum suscipit. Proin ut turpis a mauris porttitor luctus eu quis velit. Nunc libero dolor, commodo sit amet nunc nec, sollicitudin semper ligula. consectetur adipiscing elit. Curabitur viverra vulputate tincidunt.</p>
-                  </div>
-                  <div class="socmed">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </div>
-                </div>
-              </div> 
-              <div class="slider-content">
-                <div class="col-md-6 no-h-padding photo-section">
-                  <img src="assets/images/team2-large.jpg"  alt=""/>
-                </div>
-                <div class="col-md-6 text-section no-h-padding">
-                  <div class="title"><h3>Kim Jose</h3></div>
-                  <div class="subtitle"><h4>Diving Guide</h4></div>
-                  <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra vulputate tincidunt. Fusce ultricies dui pretium purus vestibulum suscipit. Proin ut turpis a mauris porttitor luctus eu quis velit. Nunc libero dolor, commodo sit amet nunc nec, sollicitudin semper ligula. consectetur adipiscing elit. Curabitur viverra vulputate tincidunt.</p>
-                  </div>
-                  <div class="socmed">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </div>
-                </div>
-              </div> 
-              <div class="slider-content">
-                <div class="col-md-6 no-h-padding photo-section">
-                  <img src="assets/images/team3-large.jpg"  alt=""/>
-                </div>
-                <div class="col-md-6 text-section no-h-padding">
-                  <div class="title"><h3>Steve Webb</h3></div>
-                  <div class="subtitle"><h4>Travel Guide</h4></div>
-                  <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra vulputate tincidunt. Fusce ultricies dui pretium purus vestibulum suscipit. Proin ut turpis a mauris porttitor luctus eu quis velit. Nunc libero dolor, commodo sit amet nunc nec, sollicitudin semper ligula. consectetur adipiscing elit. Curabitur viverra vulputate tincidunt.</p>
-                  </div>
-                  <div class="socmed">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </div>
-                </div>
-              </div> 
-              <div class="slider-content">
-                <div class="col-md-6 no-h-padding photo-section">
-                  <img src="assets/images/team4-large.jpg"  alt=""/>
-                </div>
-                <div class="col-md-6 text-section no-h-padding">
-                  <div class="title"><h3>Jessica Jean</h3></div>
-                  <div class="subtitle"><h4>Finance</h4></div>
-                  <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra vulputate tincidunt. Fusce ultricies dui pretium purus vestibulum suscipit. Proin ut turpis a mauris porttitor luctus eu quis velit. Nunc libero dolor, commodo sit amet nunc nec, sollicitudin semper ligula. consectetur adipiscing elit. Curabitur viverra vulputate tincidunt.</p>
-                  </div>
-                  <div class="socmed">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </div>
-                </div>
-              </div> 
-              <div class="slider-content">
-                <div class="col-md-6 no-h-padding photo-section">
-                  <img src="assets/images/team5-large.jpg"  alt=""/>
-                </div>
-                <div class="col-md-6 text-section no-h-padding">
-                  <div class="title"><h3>Steve Webb</h3></div>
-                  <div class="subtitle"><h4>Travel Guide</h4></div>
-                  <div class="description">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra vulputate tincidunt. Fusce ultricies dui pretium purus vestibulum suscipit. Proin ut turpis a mauris porttitor luctus eu quis velit. Nunc libero dolor, commodo sit amet nunc nec, sollicitudin semper ligula. consectetur adipiscing elit. Curabitur viverra vulputate tincidunt.</p>
-                  </div>
-                  <div class="socmed">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                  </div>
-                </div>
-              </div> 
-            </div> 
-          </div>
-        </div> 
+        </div>
       </section> 
   
 )

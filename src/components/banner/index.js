@@ -27,7 +27,7 @@ const BannerItem = (props) => (
       <div class="content valign-bottom col-md-6">
         <div class="image-content">
           <div class="image animated fadeIn wow" data-wow-delay="1s">
-            <img src={props.product} alt=""/>
+            <img src={props.product} class={style.carousel_img} alt=""/>
           </div>
         </div>
       </div>
@@ -48,18 +48,41 @@ const Banner = () => (
     button="Saiba Mais"
     image="assets/images/banner1.jpg"
     active="active"
-    product="assets/images/banner-decoration1.png"
+    product="assets/images/thermo-deck_banner-3.jpg"
     link="/thermodeck"
     />
 
    <BannerItem 
     title="Piso de EVA"
     subtitle="Soft Teck"
-    description="O piso THERMO DECK BEACH é uma verdadeira evolução em revestimentos náuticos e precisa fazer parte da sua experiência de navegação."
+    description="Conforto e design."
     button="Saiba Mais"
     image="assets/images/banner1.jpg"
-    product="assets/images/banner-decoration1.png"
+    product="assets/images/soft-tech_banner.jpg"
+    link="/softtech"
     />
+
+<BannerItem 
+    title="Carpete Náutico"
+    subtitle="Trançado"
+    description="Sofisticação, maciez e elegância."
+    button="Saiba Mais"
+    image="assets/images/banner1.jpg"
+    product="assets/images/trancado_banner.jpg"
+    link="/nauticotrancado"
+    />
+
+<BannerItem 
+    title="Tapete Vinílico"
+    subtitle="Vinil Kap"
+    description="Conforto e beleza para embarcações."
+    button="Saiba Mais"
+    image="assets/images/banner1.jpg"
+    product="assets/images/vinilkap_banner.jpg"
+    link="/vinilkap"
+    />
+
+
 
 
   </div> 

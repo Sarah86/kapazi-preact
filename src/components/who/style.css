@@ -1,0 +1,18 @@
+.imageTitle{
+    background: #00AA97;
+    position: absolute;
+    padding: 10px 30px;
+    padding-left: 30px;
+    right: 0px;
+    top: 0;
+    color: #fff;
+}
+
+.imageTitle:before{
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    border-left: 30px solid transparent;
+    border-top: 50px solid #00AA97;
+}

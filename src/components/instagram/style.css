@@ -1,7 +1,3 @@
-.instagramfeed{
-    color: white;
-}
-
-.instagram_username{
-    padding: 1em;
+.instagram_feed .instagram_username{
+    padding: 2em;
 }

@@ -13,10 +13,9 @@ const Home = () => (
 	<div class={style.home}>
 		<Banner/>
 		<Panel/>
-		<Who/>
 		<TitleParagraph/>
-		<Portfolio/>
 		<Team/>
+		<Who/>
 		<Instagram/>
 	</div>
 );
