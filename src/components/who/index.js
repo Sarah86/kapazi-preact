@@ -12,7 +12,7 @@ const WhoItem = (props) => (
 
 const Who = () => (
     <section class="who-we-are">
-      <div class="image-bg" style="background: url('assets/images/karol-ayres-2.jpeg') top no-repeat; background-size: cover;">
+      <div class="image-bg" style="background: url('assets/images/karol-ayres.jpeg') top no-repeat; background-size: cover;">
       <div class={style.imageTitle}>A Kapazi Náutica Por Aí</div>
       </div>
       <div class="container">

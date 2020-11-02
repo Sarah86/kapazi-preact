@@ -44,11 +44,12 @@ body.navbar-fixed {
     padding-top: 125px;
   }
 
+  body.navbar-fixed {
+    margin-top: 155px;
+  }
+
  }
 
- @media (max-width: 767px)
-
-}
 /*==========================================*/
 /* CSS Document */
 /*
