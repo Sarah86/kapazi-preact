@@ -22,15 +22,15 @@ const teampeople = [
         pic: "assets/images/trancado-thumb-team-detail.png",
         largepic: "assets/images/trancado-thumb-team.png",
         position: " Sofisticação, maciez e elegância em um único produto",
-        description: "descricao longa",
+        description: "O TAPETE NÁUTICO TRANÇADOalia sofisticação, maciez e elegância em um único produto e não é necessário colar na superfície da embarcação. É ideal para áreas internas, porém permite aplicação nos ambientes externos mediante a fixação com ilhós. Destaca-se por ser um produto com requinte e acabamento com bordas em viés que acompanham perfeitamente as curvas do barco dando mais conforto e segurança na embarcação.",
         link: "/nauticotrancado"
     },
     {
         name: "Tapete Vinílico Vinil Kap",
         pic: "assets/images/vinilkap-thumb-detail.png",
         largepic: "assets/images/vinilkap_4.jpg",
-        position: "Snorkling Guide",
-        description: "descricao longa",
+        position: "Conforto e Beleza para embarcações",
+        description: "É um produto com mais de 25 anos no mercado proporcionando mais conforto e beleza para embarcações, pois possui uma vasta variedade de cores e opções de combinação de borda e personalização, que aliado com a alta qualidade, resistência e acabamento do TAPETE VINÍLICO VINIL KAP fazem com que seja uma opção prática, versátil com ótimo custo benefício para embarcações.",
         link: "/vinilkap"
 
     },

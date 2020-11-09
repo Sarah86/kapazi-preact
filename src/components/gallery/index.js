@@ -9,6 +9,32 @@ const Gallery = ({numberPictures, productName}) => {
     };
     
     useEffect(() => {
+
+		        
+  // -------------- Jquery Masonry Setting -------------- 
+
+  var $container = $('.masonry-grid');
+
+  $container.imagesLoaded( function() {
+	  $container.masonry({
+	  itemSelector: '.masonry-item'
+	  });
+  });
+
+  // -------------- Jquery Isotope Setting -------------- 
+
+  var $container = $('.isotope-wrap');
+  $container.isotope({
+	  filter: '*',
+	  itemSelector: '.element-item',
+	  animationOptions: {
+	  duration: 750,
+	  easing: 'linear',
+	  queue: false
+	  }
+  });
+
+  }, [])
 		
 		$('.gallery-carousel').slick({
 			centerMode: true,
@@ -35,31 +61,6 @@ const Gallery = ({numberPictures, productName}) => {
 			  }
 			]
 		  });
-        
-  // -------------- Jquery Masonry Setting -------------- 
-
-    var $container = $('.masonry-grid');
-
-    $container.imagesLoaded( function() {
-        $container.masonry({
-        itemSelector: '.masonry-item'
-        });
-    });
-
-    // -------------- Jquery Isotope Setting -------------- 
-
-    var $container = $('.isotope-wrap');
-    $container.isotope({
-        filter: '*',
-        itemSelector: '.element-item',
-        animationOptions: {
-        duration: 750,
-        easing: 'linear',
-        queue: false
-        }
-    });
-
-    }, [])
 
 	return(
 		<section class="gallery-list" style={{margin: '2em'}}>

@@ -32,11 +32,11 @@ export default class App extends Component {
 				<Header />
 				<Router onChange={this.handleRoute}>
 					<Home path="/" />
-					<Thermodeck path="/thermodeck/" />
+					<Thermodeck path="/thermodeck" />
 					<Softtech path="/softtech/" />
-					<Vinilkap path="/vinilkap/" />
-					<Nauticotrancado path="/nauticotrancado/"/>
-					<Nauticlean path="/nauticlean/"/>
+					<Vinilkap path="/vinilkap" />
+					<Nauticotrancado path="/nauticotrancado"/>
+					<Nauticlean path="/nauticlean"/>
 					<NotFound type="404" default />
 				</Router>
 				<Footer/>
