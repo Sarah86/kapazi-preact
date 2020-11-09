@@ -48,7 +48,7 @@ const Banner = () => (
     button="Saiba Mais"
     image="assets/images/banner1.jpg"
     active="active"
-    product="assets/images/thermo-deck_banner-3.jpg"
+    product="assets/images/thermodeck_banner-1.jpg"
     link="/thermodeck"
     />
 
@@ -58,32 +58,39 @@ const Banner = () => (
     description="Conforto e design."
     button="Saiba Mais"
     image="assets/images/banner1.jpg"
-    product="assets/images/soft-tech_banner.jpg"
+    product="assets/images/softech_banner-0.jpg"
     link="/softtech"
     />
 
-<BannerItem 
-    title="Carpete Náutico"
-    subtitle="Trançado"
-    description="Sofisticação, maciez e elegância."
-    button="Saiba Mais"
-    image="assets/images/banner1.jpg"
-    product="assets/images/trancado_banner.jpg"
-    link="/nauticotrancado"
-    />
+    <BannerItem 
+        title="Carpete Náutico"
+        subtitle="Trançado"
+        description="Sofisticação, maciez e elegância."
+        button="Saiba Mais"
+        image="assets/images/banner1.jpg"
+        product="assets/images/trancado_banner-2.jpg"
+        link="/nauticotrancado"
+        />
 
-<BannerItem 
-    title="Tapete Vinílico"
-    subtitle="Vinil Kap"
-    description="Conforto e beleza para embarcações."
-    button="Saiba Mais"
-    image="assets/images/banner1.jpg"
-    product="assets/images/vinilkap_banner.jpg"
-    link="/vinilkap"
-    />
+    <BannerItem 
+        title="Tapete Vinílico"
+        subtitle="Vinil Kap"
+        description="Conforto e beleza para embarcações."
+        button="Saiba Mais"
+        image="assets/images/banner1.jpg"
+        product="assets/images/vinilkap_banner-0.jpg"
+        link="/vinilkap"
+        />
 
-
-
+    <BannerItem 
+        title="Tapete Náutico"
+        subtitle="Nauti Clean"
+        description="Áreas internas com imagens sofisticadas e personalizações."
+        button="Saiba Mais"
+        image="assets/images/banner1.jpg"
+        product="assets/images/nauticlean_banner-0.jpg"
+        link="/nauticlean"
+        />
 
   </div> 
  

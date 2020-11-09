@@ -9,7 +9,7 @@ const NotFound = () => (
             <div class="fullwidth no-h-pad left-section">
               <div class="text-wrapper">
                 <h1 class="error-message-title">404</h1>
-                <h2 class="error-message-subtitle">Erro</h2>
+                <h2 class="error-message-subtitle">Essa página não existe</h2>
                 <div class="bottom-buttons">
                   <a href="/" class="def-btn btn-solid">Voltar para a página principal</a>
                 </div>

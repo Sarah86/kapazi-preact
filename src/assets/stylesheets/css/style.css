@@ -39,6 +39,11 @@ body.navbar-fixed {
   top: 0 !important;
 }
 
+/*Team*/
+.team-slider-wrap .team-slider-nav .slick-slide.team-photo .overlay .content .position{
+  line-height: 1.1em;
+}
+
 @media (min-width: 768px) {
   .anchor{
     padding-top: 125px;

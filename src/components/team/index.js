@@ -21,22 +21,26 @@ const teampeople = [
         name: "Carpete Náutico Trançado",
         pic: "assets/images/trancado-thumb-team-detail.png",
         largepic: "assets/images/trancado-thumb-team.png",
-        position: "Snorkling Guide",
-        description: "descricao longa"
+        position: " Sofisticação, maciez e elegância em um único produto",
+        description: "descricao longa",
+        link: "/nauticotrancado"
     },
     {
         name: "Tapete Vinílico Vinil Kap",
         pic: "assets/images/vinilkap-thumb-detail.png",
         largepic: "assets/images/vinilkap_4.jpg",
         position: "Snorkling Guide",
-        description: "descricao longa"
+        description: "descricao longa",
+        link: "/vinilkap"
+
     },
     {
-        name: "Carpete Náutico Nauti Clean",
+        name: "Tapete Náutico Nauti Clean",
         pic: "assets/images/nauticlean-thumb-team-detail.png",
         largepic: "assets/images/team5-large.jpg",
-        position: "Snorkling Guide",
-        description: "descricao longa"
+        position: "Áreas internas com imagens sofisticadas e personalizações.",
+        description: "descricao longa",
+        link: "/nauticlean"
     }
 ]
 
