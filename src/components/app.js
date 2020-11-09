@@ -1,4 +1,4 @@
-import { h, Component } from 'preact';
+import { h, render, Component } from 'preact';
 import { Router } from 'preact-router';
 import { Provider } from '@preact/prerender-data-provider';
 
@@ -30,4 +30,4 @@ const App = () => (
 			</div>
 	)
 
-	export default App;
+	render(<App />, document.body);
