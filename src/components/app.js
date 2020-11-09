@@ -28,6 +28,6 @@ const App = () => (
 				</Router>
 				<Footer/>
 			</div>
-	)
+	);
 
 	render(<App />, document.body);
