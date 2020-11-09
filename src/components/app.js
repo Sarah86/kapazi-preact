@@ -14,23 +14,10 @@ import Nauticotrancado from '../routes/nauticotrancado';
 import Nauticlean from '../routes/nauticlean';
 import NotFound from '../routes/404';
 
-export default class App extends Component {
-	
-	/** Gets fired when the route changes.
-	 *	@param {Object} event		"change" event from [preact-router](http://git.io/preact-router)
-	 *	@param {string} event.url	The newly routed URL
-	 */
-	handleRoute = e => {
-		this.currentUrl = e.url;
-	};
-
-	render(props){
-
-	return(
-		<Provider value={props}>
+const App = () => (
 			<div id="app">
 				<Header />
-				<Router onChange={this.handleRoute}>
+				<Router>
 					<Home path="/" />
 					<Thermodeck path="/thermodeck" />
 					<Softtech path="/softtech/" />
@@ -41,6 +28,6 @@ export default class App extends Component {
 				</Router>
 				<Footer/>
 			</div>
-		</Provider>
-	)}
-}
+	)
+
+	export default App;
