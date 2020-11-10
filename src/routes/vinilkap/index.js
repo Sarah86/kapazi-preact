@@ -18,7 +18,7 @@ benefício para embarcações.
 	</p>
 
 	</div>
-	<Gallery numberPictures="33" productName="vinilkap"/>
+	<Gallery numberPictures="7" productName="vinilkap"/>
 	</>
 )
 

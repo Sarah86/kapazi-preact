@@ -4,7 +4,7 @@ import Gallery from '../../components/gallery';
 
 const Nauticotrancado = () => (
 	<>
-	<BannerGallery produto="Carpete Náutico Trançado" descricao=""/>
+	<BannerGallery produto="Tapete Náutico Trançado" descricao=""/>
 	<div class="container" style={{marginTop: '2em'}}>
 	<p>
 	O <b>TAPETE NÁUTICO TRANÇADO</b>alia sofisticação,
@@ -19,7 +19,7 @@ mais conforto e segurança na embarcação.
 	</p>
 
 	</div>
-	<Gallery numberPictures="33" productName="tapete-trancado"/>
+	<Gallery numberPictures="20" productName="tapete-trancado"/>
 	</>
 )
 

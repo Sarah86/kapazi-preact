@@ -13,7 +13,7 @@ const Footer = () => (
 				  <h4 class="underlined-heading">Sobre nós</h4>
 				</div>
 				<div class="content">
-				  <p>Marsh mallow muffin soufflé jelly-o tart cake Marsh mallow macaroon jelly jubes dont dragee ice cream dessert gummi bears. chocolate topping. Dessert halvah gummies wafer toffee. tiramisu croissant cake.</p>
+				  <p>A Kapazi Nautica Por aí é representante oficial da Kapazi Náutica. Somos Karol Kapazi e Ayres Coelho. Moramos a bordo de um Veleiro, e estamos por aí, em todos os lugares. ⛵️</p>
   				</div>
 			  </div> 
 			</div>

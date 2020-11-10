@@ -18,7 +18,7 @@ const Softtech = () => (
 	</p>
 
 	</div>
-	<Gallery numberPictures="33" productName="soft-tech"/>
+	<Gallery numberPictures="31" productName="soft-tech"/>
 	</>
 )
 

@@ -23,32 +23,28 @@ const Who = () => (
             <div class="title">
               <h3 class="underlined-heading wow animated fadeInUp">Sobre Nós</h3>
             </div>
-            <div class="text wow animated fadeIn"><p>Por aí... em todos os lugares</p></div>
+            <div class="text wow animated fadeIn"><p>A Kapazi Nautica Por aí é representante oficial da Kapazi Náutica. Somos Karol Kapazi e Ayres Coelho. Moramos a bordo de um Veleiro, e estamos por aí, em todos os lugares. ⛵️</p></div>
             <div class="icon-list-wrap">
               <div class="row"> 
-              <WhoItem 
-                icon="pe-7s-anchor"
-                Toptext="Temos o"
-                bottomText="Melhor Time"/>
-                <div class="icon-list col-md-6 col-sm-6">
+                <div class="icon-list col">
                   <div class="icon text-center"><i class="pe-7s-compass"></i></div>
                   <div class="icon-text">
-                    <div class="top-text">Our Team Is</div>
-                    <div class="bottom-text">Best Hikers</div>
+                    <div class="top-text">Vamos até você e sua embarcação,</div>
+                    <div class="bottom-text">para fazer orçamento e levar amostras dos produtos </div>
                   </div>
                 </div>
-                <div class="icon-list col-md-6 col-sm-6">
+                <div class="icon-list col">
                   <div class="icon text-center"><i class="pe-7s-plane"></i></div>
                   <div class="icon-text">
-                    <div class="top-text">We Are</div>
-                    <div class="bottom-text">Great Traveler</div>
+                    <div class="top-text">Somos apaixonados pelo Mar e nossa equipe está preparada para lhe apresentar</div>
+                    <div class="bottom-text"> a melhor solução em pisos.</div>
                   </div>
                 </div>
-                <div class="icon-list col-md-6 col-sm-6">
+                <div class="icon-list col">
                   <div class="icon text-center"><i class="pe-7s-way"></i></div>
                   <div class="icon-text">
-                    <div class="top-text">Our Team Is</div>
-                    <div class="bottom-text">Best Explorer</div>
+                    <div class="top-text"> A Kapazi é líder de mercado, no Brasil, no segmento de</div>
+                    <div class="bottom-text">pisos náuticos, tapetes, revestimentos e acessórios.</div>
                   </div>
                 </div>
               </div>
