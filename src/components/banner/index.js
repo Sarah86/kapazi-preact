@@ -88,7 +88,7 @@ const Banner = () => (
         description="Áreas internas com imagens sofisticadas e personalizações."
         button="Saiba Mais"
         image="assets/images/banner1.jpg"
-        product="assets/images/nauticlean_banner-0.jpg"
+        product="assets/images/nauticlean_banner-1.jpg"
         link="/nauticlean"
         />
 

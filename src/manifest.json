@@ -1,21 +1,9 @@
 {
   "name": "Kapazi Náutica Por Aí",
-  "short_name": "kkapazi-por-ai",
+  "short_name": "kapazi-por-ai",
   "start_url": "/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
-  "theme_color": "#673ab8",
-  "icons": [
-    {
-      "src": "/assets/icons/android-chrome-192x192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/assets/icons/android-chrome-512x512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ]
+  "theme_color": "#15859B"
 }

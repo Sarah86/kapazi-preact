@@ -37,9 +37,9 @@ const teampeople = [
     {
         name: "Tapete Náutico Nauti Clean",
         pic: "assets/images/nauticlean-thumb-team-detail.png",
-        largepic: "assets/images/team5-large.jpg",
-        position: "Áreas internas com imagens sofisticadas e personalizações.",
-        description: "descricao longa",
+        largepic: "assets/images/nauticlean_0.jpg",
+        position: "Áreas internas com sofisticação",
+        description: "O TAPETE NÁUTICO NAUTI CLEAN é um tapete em nylon com base em PVC desenvolvido para áreas internas que possibilita a inserção de imagens sofisticadas e personalizações. Disponível em 7 cores possui uma borda debrun que traz um acabamento perfeito ao roduto. Não há necessidade de fixação, facilitando a manutenção e limpeza do ambiente.",
         link: "/nauticlean"
     }
 ]
