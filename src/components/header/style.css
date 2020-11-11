@@ -1,3 +1,11 @@
 .active:after {
     width: 100%;
 }
+
+.customnavbar{
+    margin-top: 1em;
+}
+
+.dropmenu li{
+    padding: 0 !important;
+}

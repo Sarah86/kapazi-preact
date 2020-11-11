@@ -28,8 +28,10 @@ const Gallery = ({numberPictures, productName}) => {
 
 		var $mansorygrid = $('.masonry-grid');
 
-		$mansorygrid.masonry({
+		$mansorygrid.imagesLoaded( function() {
+			$mansorygrid.masonry({
 			itemSelector: '.masonry-item'
+			});
 		});
 
 		// -------------- Jquery Isotope Setting -------------- 
