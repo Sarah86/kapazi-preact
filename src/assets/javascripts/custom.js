@@ -29,13 +29,13 @@ $(window).load(function() {
 
   // -------------- Dropdown -------------- 
 
-  if ($('html').hasClass('no-touchevents')) {
+  /*if ($('html').hasClass('no-touchevents')) {
     $(".dropdown").hover(
       function() { $('.dropdown-menu', this).fadeIn("fast");
       },
       function() { $('.dropdown-menu', this).fadeOut("fast");
     });
-  };
+  };*/ 
 
   // -------------- CountTo -------------- 
   
@@ -227,7 +227,7 @@ $(window).load(function() {
 
   // -------------- Lightbox -------------- 
 
-  $('.grouped-image-list a').vanillabox();
+ /* $('.grouped-image-list a').vanillabox();*/
 
   // -------------- Bootstrap Carousel -------------- 
 

@@ -1,8 +1,24 @@
+import {useEffect} from 'react';
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import style from './style.css';
 
-const Header = () => (
+const Header = () => {
+
+
+  useEffect(() => {
+
+    function fadeIn() { $('.dropdown-menu', this).fadeIn("fast");}
+    function fadeOut() { $('.dropdown-menu', this).fadeOut("fast");}
+
+      // -------------- Dropdown -------------- 
+      if ($('html').hasClass('no-touchevents')) {
+        $(".dropdown").on("mouseenter", fadeIn).on("mouseleave", fadeOut);
+      };
+
+  }, [])
+
+return(
 	<header class={style.header}>
 		<div class="container-fluid">
       <nav class="navbar navbar-inverse navbar-fixed-top megamenu">
@@ -61,5 +77,6 @@ const Header = () => (
     </div>
 	</header>
 );
+}
 
 export default Header;

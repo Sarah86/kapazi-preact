@@ -23,16 +23,7 @@ const Gallery = ({numberPictures, productName}) => {
 		)
     
     useEffect(() => {
-				
-		// -------------- Jquery Masonry Setting -------------- 
-
-		var $mansorygrid = $('.masonry-grid');
-
-		$mansorygrid.imagesLoaded( function() {
-			$mansorygrid.masonry({
-			itemSelector: '.masonry-item'
-			});
-		});
+			
 
 		// -------------- Jquery Isotope Setting -------------- 
 
@@ -46,6 +37,20 @@ const Gallery = ({numberPictures, productName}) => {
 			queue: false
 			}
 		});
+
+		// -------------- Jquery Masonry Setting -------------- 
+
+		var $mansorygrid = $('.masonry-grid');
+
+		$mansorygrid.imagesLoaded( function() {
+			$mansorygrid.masonry({
+			itemSelector: '.masonry-item'
+			});
+		});
+
+			// -------------- Lightbox -------------- 
+
+  		$('.grouped-image-list a').vanillabox();
 
 	}, [])
 	
