@@ -1,5 +1,6 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
+import { contatos } from '../infos';
 import style from './style.css';
 
 const Footer = () => (
@@ -31,8 +32,8 @@ const Footer = () => (
 					  </a>
 					</div>
 					<div class="media-body">
-					  <p>(24) 99864-8221 - 𝗥𝗝</p>
-					  <p>(11) 94177-9925 - 𝗦𝗣</p>
+					  <p>{contatos.telrj} - RJ</p>
+					  <p>{contatos.telsp} - SP</p>
 					</div>
 				  </div>
 				  <div class="media">
@@ -42,7 +43,7 @@ const Footer = () => (
 					  </a>
 					</div>
 					<div class="media-body">
-					  <p><a href="mailto:𝗸𝗮𝗽𝗮𝘇𝗶𝗽𝗼𝗿𝗮𝗶@𝗴𝗺𝗮𝗶𝗹.𝗰𝗼𝗺" >𝗸𝗮𝗽𝗮𝘇𝗶𝗽𝗼𝗿𝗮𝗶@𝗴𝗺𝗮𝗶𝗹.𝗰𝗼𝗺</a></p>
+					<a href={`mailto:${contatos.email}`}>{contatos.email}</a>
 					</div>
 				  </div>
 				</div>
@@ -82,11 +83,7 @@ const Footer = () => (
 			  <div class="col-md-6 col-sm-6 col-xs-6 left-content">&copy; Todos os direitos reservados a Kapazi Náutica Por Aí</div>
 			  <div class="col-md-6 col-sm-6 col-xs-6  right-content text-right">
 				<div class="social-media">
-				  <a href="#"><i class="fa fa-facebook"></i></a>
-				  <a href="#"><i class="fa fa-twitter"></i></a>
-				  <a href="#"><i class="fa fa-google-plus"></i></a>
-				  <a href="#"><i class="fa fa-dribbble"></i></a>
-				  <a href="#"><i class="fa fa-vimeo"></i></a>
+				  <a href={contatos.instagram}><i class="fa fa-instagram"></i></a>
 				</div>
 			  </div>
 			</div> 

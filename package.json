@@ -28,6 +28,7 @@
     "sirv-cli": "1.0.3"
   },
   "dependencies": {
+    "emailjs-com": "^2.6.4",
     "preact": "^10.3.2",
     "preact-async-route": "^2.2.1",
     "preact-render-to-string": "^5.1.4",

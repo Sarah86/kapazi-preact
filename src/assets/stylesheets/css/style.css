@@ -17,6 +17,10 @@
   font-family: 'RussoOne' !important;
 }
 
+.white{
+  color: #FFF;
+}
+
 .font-weight-light{
   font-weight: 100;
 }

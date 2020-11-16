@@ -1,3 +1,55 @@
+import React from "react";
+import {contatos} from "../infos"
+
+const ContactForm = () => {
+    
+    return(
+        <section class="bottom-contact-form sec-pad">
+        <div class="container">
+          <div class="iconic-title text-center col-md-12 no-h-padding wow animated fadeIn">
+            <div class="col-md-12 no-h-padding">
+              <div class="title-icon">
+                <span>
+                  <i class="pe-7s-id pe-2x"></i>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-12 no-h-padding">
+              <h1>Fale conosco</h1>
+              <p>Envie sua mensagem e responderemos o mais breve possível</p>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-md-offset-2 text-center sec-h-pad sec-q-pad-t wow animated fadeIn"></div>
+
+          <form action="https://formspree.io/f/xwkwqnny" method="POST" class="col-md-6 col-md-offset-3">
+            <input
+              type="text"
+              class="def-input fullwidth mar-b-20 wow animated fadeIn"
+              placeholder="Nome"
+              name="name"
+            />
+            <input
+              type="text"
+              class="def-input fullwidth mar-b-20 wow animated fadeIn"
+              placeholder="E-mail"
+              name="email"
+            />
+            <textarea
+              cols="30"
+              rows="5"
+              class="def-input fullwidth mar-b-20 wow animated fadeIn"
+              placeholder="Sua mensagem"
+              name="message"
+            ></textarea>
+            <input type="submit" value="Enviar" class="def-btn btn-solid fullwidth mar-t-10 wow animated fadeIn"/>
+          </form>
+        </div>
+      </section>
+    )
+}
+
+
 const Contato = () => {
   return (
     <>
@@ -38,8 +90,8 @@ const Contato = () => {
               <h2 class="underlined-heading mar-t-10 font-russoone font-weight-light">Visite-nos</h2>
             </div>
             <p class="text-center">
-              <a href="https://goo.gl/maps/TBp7nLQMBkexgtYD9">
-                AV ENGENHEIRO WINSTON MARUCA, 10 - LJ 14 - ANGRA DOS REIS - RJ
+              <a href={contatos.maps}>
+                {contatos.endereco}
               </a>
             </p>
           </div>
@@ -55,9 +107,9 @@ const Contato = () => {
               <h2 class="underlined-heading mar-t-10 font-russoone font-weight-light">Entre em contato</h2>
             </div>
             <p class="text-center">
-              <a href="tel:+5524998648221">(24) 99864-8221 - 𝗥𝗝</a>
+              Rio de Janeiro<br/> <a href={`tel:${contatos.whatsapprj}`}><i class="fa fa-whatsapp" aria-hidden="true"></i> {contatos.telrj}</a>
               <br />
-              <a href="tel:+5511941779925">(11) 94177-9925 - 𝗦𝗣</a>
+              São Paulo<br/> <a href={`tel:${contatos.whatsappsp}`}><i class="fa fa-whatsapp" aria-hidden="true"></i> {contatos.telsp}</a>
             </p>
           </div>
 
@@ -72,52 +124,13 @@ const Contato = () => {
               <h2 class="underlined-heading mar-t-10 font-russoone font-weight-light">E-mail</h2>
             </div>
             <p class="text-center">
-              <a href="mailto:kapazirio@gmail.com">kapazirio@gmail.com</a>
+              <a href={`mailto:${contatos.email}`}>{contatos.email}</a>
             </p>
           </div>
         </div>
       </section>
-      <section class="bottom-contact-form sec-pad">
-        <div class="container">
-          <div class="iconic-title text-center col-md-12 no-h-padding wow animated fadeIn">
-            <div class="col-md-12 no-h-padding">
-              <div class="title-icon">
-                <span>
-                  <i class="pe-7s-id pe-2x"></i>
-                </span>
-              </div>
-            </div>
-            <div class="col-md-12 no-h-padding">
-              <h1>Fale conosco</h1>
-              <p>Envie sua mensagem e responderemos o mais breve possível</p>
-            </div>
-          </div>
+      <ContactForm/>
 
-          <div class="col-md-8 col-md-offset-2 text-center sec-h-pad sec-q-pad-t wow animated fadeIn"></div>
-
-          <div class="col-md-6 col-md-offset-3">
-            <input
-              type="text"
-              class="def-input fullwidth mar-b-20 wow animated fadeIn"
-              placeholder="Nome"
-            />
-            <input
-              type="text"
-              class="def-input fullwidth mar-b-20 wow animated fadeIn"
-              placeholder="E-mail"
-            />
-            <textarea
-              cols="30"
-              rows="5"
-              class="def-input fullwidth mar-b-20 wow animated fadeIn"
-              placeholder="Sua mensagem"
-            ></textarea>
-            <button class="def-btn btn-solid fullwidth mar-t-10 wow animated fadeIn">
-              Enviar
-            </button>
-          </div>
-        </div>
-      </section>
     </>
   );
 };

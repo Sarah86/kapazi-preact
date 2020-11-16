@@ -4528,6 +4528,12 @@ footer .copyright .content-wrap .content .right-content .social-media a i {
   .navbar .navbar-collapse .navbar-nav {
     height: 100%;
     overflow: scroll;
+    position: fixed;
+    right: 1em;
+    left: 1em;
+    bottom: 0;
+    top: 4.7em;
+    background: #272f34;
   }
   .navbar .navbar-collapse .navbar-nav li a {
     color: #ccc;
