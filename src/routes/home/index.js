@@ -8,6 +8,7 @@ import style from './style.css';
 import Testimonial from '../../components/testimonial';
 import Instagram from '../../components/instagram';
 import Team from '../../components/team';
+import Contato from '../../components/contato';
 
 const Home = () => (
 	<div class={style.home}>
@@ -16,6 +17,7 @@ const Home = () => (
 		<TitleParagraph/>
 		<Team/>
 		<Who/>
+		<Contato/>
 		<Instagram/>
 	</div>
 );

@@ -13,6 +13,14 @@
 */
 /*==========================================*/
 
+.font-russoone{
+  font-family: 'RussoOne' !important;
+}
+
+.font-weight-light{
+  font-weight: 100;
+}
+
 body.navbar-fixed {
   margin-top: 65px;
 }
