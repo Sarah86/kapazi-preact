@@ -13,6 +13,12 @@
 */
 /*==========================================*/
 
+.banner.carousel .left .control, .banner.carousel .right .control {
+  display: block;
+  top: 50%;
+  position: absolute;
+}
+
 .font-russoone{
   font-family: 'RussoOne' !important;
 }
