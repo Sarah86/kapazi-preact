@@ -42,7 +42,7 @@ const ContactForm = () => {
               placeholder="Sua mensagem"
               name="message"
             ></textarea>
-            <input type="submit" value="Enviar" class="def-btn btn-solid fullwidth mar-t-10 wow animated fadeIn"/>
+            <input type="submit" value="Enviar" class="def-btn btn-solid fullwidth mar-t-10 wow animated fadeIn" onClick={() => (gtag('event', 'conversion', {'send_to': 'AW-473885135/eai6CK2xp-oBEM_T--EB'}))}/>
           </form>
         </div>
       </section>
