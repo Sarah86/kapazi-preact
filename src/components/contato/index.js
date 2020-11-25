@@ -2,6 +2,20 @@ import React from "react";
 import {contatos} from "../infos"
 
 const ContactForm = () => {
+
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-473885135/eai6CK2xp-oBEM_T--EB',
+      'event_callback': callback
+  });
+  return false;
+}
+
     
     return(
         <section class="bottom-contact-form sec-pad">
@@ -42,7 +56,7 @@ const ContactForm = () => {
               placeholder="Sua mensagem"
               name="message"
             ></textarea>
-            <input type="submit" value="Enviar" class="def-btn btn-solid fullwidth mar-t-10 wow animated fadeIn" onClick={() => (gtag('event', 'conversion', {'send_to': 'AW-473885135/eai6CK2xp-oBEM_T--EB'}))}/>
+            <input type="submit" value="Enviar" class="def-btn btn-solid fullwidth mar-t-10 wow animated fadeIn" onClick={gtag_report_conversion}/>
           </form>
         </div>
       </section>
