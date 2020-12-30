@@ -44,7 +44,7 @@ const Who = () => (
                   <div class="icon text-center"><i class="pe-7s-medal"></i></div>
                   <div class="icon-text">
                     <div class="top-text"> A Kapazi é líder de mercado, no Brasil, no segmento de</div>
-                    <div class="bottom-text">pisos náuticos, tapetes, revestimentos e acessórios.</div>
+                    <div class="bottom-text">pisos náuticos, tapetes náuticos, revestimentos náuticos e acessórios. Temos várias soluções para a sua embarcação.</div>
                   </div>
                 </div>
               </div>
