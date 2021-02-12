@@ -25,7 +25,7 @@ const BannerItem = (props) => (
       <div class="content valign-bottom col-md-6">
         <div class="image-content">
           <div class="image animated fadeIn wow" data-wow-delay="1s">
-            <img src={props.product} class={style.carousel_img} alt=""/>
+            <img src={props.product} class={style.carousel_img} alt={props.title}/>
           </div>
         </div>
       </div>
