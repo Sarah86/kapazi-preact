@@ -1,9 +1,52 @@
-const produtos = [
+export const products = [
     {
-        nome: "Thermodeck",
-        slug: "thermodeck",
-    }
-]
+      title: "O melhor piso náutico do mundo",
+      subtitle: "Thermo Deck",
+      description: "O piso THERMO DECK é uma verdadeira evolução em revestimentos náuticos e precisa fazer parte da sua experiência de navegação.",
+      button: "Saiba Mais",
+      image: "assets/images/banner1.jpg",
+      active:"active",
+      product: "assets/images/thermodeck_banner-1.jpg",
+      link: "/thermodeck",
+    },
+    {
+      title: "Piso de EVA",
+      subtitle: "Soft Teck",
+      description: "Conforto e design.",
+      button: "Saiba Mais",
+      image: "assets/images/banner1.jpg",
+      product: "assets/images/softech_banner-0.jpg",
+      link: "/softtech",
+    },
+    {
+      title: "Carpete Náutico",
+      subtitle: "Trançado",
+      description: "Sofisticação, maciez e elegância.",
+      button: "Saiba Mais",
+      image: "assets/images/banner1.jpg",
+      product: "assets/images/trancado_banner-2.jpg",
+      link: "/nauticotrancado",
+    },
+    {
+      title: "Tapete Vinílico",
+      subtitle: "Vinil Kap",
+      description: "Conforto e beleza para embarcações.",
+      button: "Saiba Mais",
+      image: "assets/images/banner1.jpg",
+      product: "assets/images/vinilkap_banner-0.jpg",
+      link: "/vinilkap",
+    },
+    {
+      title: "Tapete Náutico",
+      subtitle: "Nauti Clean",
+      description: "Áreas internas com imagens sofisticadas e personalizações.",
+      button: "Saiba Mais",
+      image: "assets/images/banner1.jpg",
+      product: "assets/images/nauticlean_banner-1.jpg",
+      link: "/nauticlean",
+    },
+  ]
+
 
 export const contatos = {
     telrj: "(24) 99864-8221",

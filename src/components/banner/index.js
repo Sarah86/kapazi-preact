@@ -1,3 +1,4 @@
+import {useEffect} from 'react';
 import style from './style.css';
 
 
@@ -34,7 +35,13 @@ const BannerItem = (props) => (
 </div>
 )
 
-const Banner = () => (
+const Banner = () => {
+  useEffect(() => {
+    $('.carousel').carousel({
+      interval: 7000
+    }); 
+  }, [])
+  return(
   // Banner Begin 
   <section class="banner carousel slide" id="banner-carousel">
   <div class="carousel-inner">
@@ -112,6 +119,6 @@ const Banner = () => (
   </div>
 
 </section> 
-);
+)};
 
 export default Banner;

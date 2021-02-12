@@ -124,7 +124,7 @@ const Contato = () => {
               <h2 class="underlined-heading mar-t-10 font-russoone font-weight-light">Visite-nos</h2>
             </div>
             <p class="text-center">
-              <a href={contatos.maps}>
+              <a href={contatos.maps} onClick={() => gtag_report_conversion()}>
                 {contatos.endereco}
               </a>
             </p>
@@ -141,9 +141,9 @@ const Contato = () => {
               <h2 class="underlined-heading mar-t-10 font-russoone font-weight-light">Entre em contato</h2>
             </div>
             <p class="text-center">
-              Rio de Janeiro<br/> <a href={`tel:${contatos.whatsapprj}`}><i class="fa fa-whatsapp" aria-hidden="true"></i> {contatos.telrj}</a>
+              Rio de Janeiro<br/> <a href={`tel:${contatos.whatsapprj}`} onClick={() => gtag_report_conversion()}><i class="fa fa-whatsapp" aria-hidden="true"></i> {contatos.telrj}</a>
               <br />
-              São Paulo<br/> <a href={`tel:${contatos.whatsappsp}`}><i class="fa fa-whatsapp" aria-hidden="true"></i> {contatos.telsp}</a>
+              São Paulo<br/> <a href={`tel:${contatos.whatsappsp}`} onClick={() => gtag_report_conversion()}><i class="fa fa-whatsapp" aria-hidden="true"></i> {contatos.telsp}</a>
             </p>
           </div>
 
@@ -158,7 +158,7 @@ const Contato = () => {
               <h2 class="underlined-heading mar-t-10 font-russoone font-weight-light">E-mail</h2>
             </div>
             <p class="text-center">
-              <a href={`mailto:${contatos.email}`}>{contatos.email}</a>
+              <a href={`mailto:${contatos.email}`} onClick={() => gtag_report_conversion()}>{contatos.email}</a>
             </p>
           </div>
         </div>

@@ -231,9 +231,9 @@ $(window).load(function() {
 
   // -------------- Bootstrap Carousel -------------- 
 
-  $('.carousel').carousel({
+  /*$('.carousel').carousel({
     interval: 7000
-  });   
+  });  */ 
 	
 	// -------------- On Scroll Navbar Effect -------------- 
 
