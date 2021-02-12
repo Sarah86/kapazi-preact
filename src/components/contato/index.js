@@ -1,20 +1,44 @@
-import React from "react";
+import React, {useState} from "react";
 import {contatos} from "../infos"
 
 const ContactForm = () => {
 
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-473885135/eai6CK2xp-oBEM_T--EB',
-      'event_callback': callback
-  });
-  return false;
-}
+  const [status, setStatus] = useState("");
+
+  const gtag_report_conversion = (url) => {
+    console.log(url);
+    let callback = () => {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-473885135/eai6CK2xp-oBEM_T--EB',
+        'event_callback': callback
+    });
+    return false;
+  }
+
+  const submitForm = (ev) => {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        setStatus("SUCCESS");
+        gtag_report_conversion();
+      } else {
+        setStatus("ERROR");
+      }
+    };
+    xhr.send(data);
+  }
+  
 
     
     return(
@@ -36,7 +60,11 @@ function gtag_report_conversion(url) {
 
           <div class="col-md-8 col-md-offset-2 text-center sec-h-pad sec-q-pad-t wow animated fadeIn"></div>
 
-          <form action="https://formspree.io/f/xwkwqnny" method="POST" class="col-md-6 col-md-offset-3">
+          <form  
+            onSubmit={(ev) => submitForm(ev)}
+            action="https://formspree.io/f/xwkwqnny"
+            method="POST"
+            class="col-md-6 col-md-offset-3">
             <input
               type="text"
               class="def-input fullwidth mar-b-20 wow animated fadeIn"
@@ -47,7 +75,7 @@ function gtag_report_conversion(url) {
               type="text"
               class="def-input fullwidth mar-b-20 wow animated fadeIn"
               placeholder="E-mail"
-              name="email"
+              name="_replyto"
             />
             <textarea
               cols="30"
@@ -56,7 +84,12 @@ function gtag_report_conversion(url) {
               placeholder="Sua mensagem"
               name="message"
             ></textarea>
-            <input type="submit" value="Enviar" class="def-btn btn-solid fullwidth mar-t-10 wow animated fadeIn" onClick={gtag_report_conversion}/>
+              {
+                status === "SUCCESS" ? 
+                (<p>Obrigado! Sua mensagem foi enviada com sucesso!</p>) : 
+                <input type="submit" value="Enviar" class="def-btn btn-solid fullwidth mar-t-10 wow animated fadeIn"/>
+              }
+              {status === "ERROR" && <p>Opa! Sua mensagem não pode ser enviada. Tente nos contactar por telefone.</p>}
           </form>
         </div>
       </section>

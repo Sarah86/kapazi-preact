@@ -51,7 +51,7 @@ const Footer = () => (
 			</div>
 
   
-			<div class="col-md-4 col-sm-4 contact-us">
+			{/*<div class="col-md-4 col-sm-4 contact-us">
 			  <div class="footer-column margin-responsive">
 				<div class="title">
 				  <h4 class="underlined-heading">Inscreva-se</h4>
@@ -71,7 +71,7 @@ const Footer = () => (
 				  </form>
 				</div>
 			  </div> 
-			</div> 
+			</div>*/}
   
 		  </div> 
 		</div>
