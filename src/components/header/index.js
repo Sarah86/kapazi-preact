@@ -3,6 +3,7 @@ import { h } from "preact";
 import { Link } from "preact-router/match";
 import style from "./style.css";
 import { contatos } from "../infos";
+import { gtag_report_conversion } from "../utils";
 
 const Header = () => {
   useEffect(() => {
@@ -13,7 +14,6 @@ const Header = () => {
       $(".dropdown-menu", this).fadeOut("fast");
     }
 
-    // -------------- Dropdown --------------
     if ($("html").hasClass("no-touchevents")) {
       $(".dropdown").on("mouseenter", fadeIn).on("mouseleave", fadeOut);
     }
@@ -37,20 +37,20 @@ const Header = () => {
           <div class="top-content">
             <div class="container">
               <ul>
-                <a href={contatos.maps}>
+                <a href={contatos.maps} onClick={() => gtag_report_conversion()}>
                   <li>
                     <i class="pe-7s-map-marker"></i>
                     {contatos.endereco}
                   </li>
                 </a>
                 <li>
-                  <a href={`tel:${contatos.numerorj}`} class="white">
+                  <a href={`tel:${contatos.numerorj}`} class="white" onClick={() => gtag_report_conversion()}>
                     <i class="pe-7s-call"></i>
                     {contatos.telrj}
                   </a>
                 </li>
                 <li>
-                  <a href={`mailto:${contatos.email}`} class="white">
+                  <a href={`mailto:${contatos.email}`} class="white" onClick={() => gtag_report_conversion()}>
                     <i class="pe-7s-mail"></i>
                     {contatos.email}
                   </a>

@@ -1,6 +1,7 @@
 import { h } from 'preact';
 import { Link } from 'preact-router/match';
 import { contatos } from '../infos';
+import { gtag_report_conversion } from '../utils';
 import style from './style.css';
 
 const Footer = () => (
@@ -27,9 +28,7 @@ const Footer = () => (
 				<div class="content">
 				  <div class="media">
 					<div class="media-left">
-					  <a href="#">
 						<i class="pe-7s-phone pe-2x"></i>
-					  </a>
 					</div>
 					<div class="media-body">
 					  <p>{contatos.telrj} - RJ</p>
@@ -38,12 +37,12 @@ const Footer = () => (
 				  </div>
 				  <div class="media">
 					<div class="media-left">
-					  <a href="#">
+					  <a href={`mailto:${contatos.email}`}>
 						<i class="pe-7s-mail pe-2x"></i>
 					  </a>
 					</div>
 					<div class="media-body">
-					<a href={`mailto:${contatos.email}`}>{contatos.email}</a>
+					<a href={`mailto:${contatos.email}`} onClick={() => gtag_report_conversion()}>{contatos.email}</a>
 					</div>
 				  </div>
 				</div>
